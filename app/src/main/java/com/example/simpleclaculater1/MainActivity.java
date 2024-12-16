@@ -25,14 +25,13 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-
     @SuppressLint("SetTextI18n")
     public void onBtnClicked(View view) {
-        EditText et1 = findViewById(R.id.Num1);
+        EditText et1 = (EditText) findViewById(R.id.Num1);
         String et1Text = et1.getText().toString();
         Integer num1 = Integer.valueOf(et1Text);
 
-        EditText et2 = findViewById(R.id.Num2);
+        EditText et2 = (EditText)findViewById(R.id.Num2);
         String et2Text = et2.getText().toString();
         Integer num2 = Integer.valueOf(et2Text);
 
@@ -50,6 +49,5 @@ public class MainActivity extends AppCompatActivity {
             TextView tvRes = findViewById(R.id.tvResult);
             tvRes.setText(result.toString());
         }
-
     }
 }
